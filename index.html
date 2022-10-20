@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 position-absolute bottom-0 end-0">
+                    <div class="card shadow-lg " >
+                        <div class="card-header d-flex justify-content-between">
+                            <h5>Chatbot</h5>
+                            <button class="btn btn-danger btn-sm" id="close">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </button>
+                        </div>
+                        <div class="card-body" id="messages"></div>
+                        <div class="card-footer">
+                            <div class="input-group ">
+                                <input type="text" class="form-control " placeholder="Enter your message here..." aria-label="Recipient's username" aria-describedby="send">
+                                <button class="btn btn-secondary" type="button" id="send" disabled>Send <i class="bi bi-send"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <audio src="audio/iphone_sound.mp3"></audio>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
